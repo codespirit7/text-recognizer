@@ -6,6 +6,7 @@ var filename = "file.png";
 
 var writeFile = fs.createWriteStream(filename);
 
+//downloading and recognizing image
 request(url)
   .pipe(writeFile)
   .on("close", function () {
